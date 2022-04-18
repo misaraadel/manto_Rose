@@ -1252,8 +1252,8 @@ ul {
 .navbar .contnet .image-content img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   -o-object-position: center;
      object-position: center;
 }
@@ -1281,12 +1281,12 @@ ul {
 .navbar .contnet .data li a {
   width: 50px;
   height: 50px;
-  background-color: #BC8B46;
+  background-color: #008BD2;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid #BC8B46;
+  border: 1px solid #008BD2;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1307,7 +1307,7 @@ ul {
 }
 
 .navbar .contnet .data li a:hover i {
-  color: #BC8B46;
+  color: #008BD2;
 }
 
 header {
@@ -1402,8 +1402,8 @@ header .share-data {
   padding: 20px 10px;
   background-color: #fff;
   border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 10px rgba(188, 139, 70, 0.1);
-          box-shadow: 0px 0px 10px rgba(188, 139, 70, 0.1);
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 139, 210, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 139, 210, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1415,7 +1415,7 @@ header .share-data {
 }
 
 header .share-data h1 {
-  color: #BC8B46;
+  color: #008BD2;
   font-size: 18px;
   font-weight: 700;
   margin: 0px;
@@ -1448,7 +1448,7 @@ header .share-data .data li a {
           align-items: center;
   align-items: center;
   padding: 7px 15px;
-  background-color: #BC8B46;
+  background-color: #008BD2;
   border-radius: 4px;
 }
 
@@ -1536,13 +1536,214 @@ header .share-data .data li a span {
      object-fit: contain;
   -webkit-margin-end: 15px;
           margin-inline-end: 15px;
-  -webkit-filter: invert(58%) sepia(11%) saturate(2051%) hue-rotate(356deg) brightness(96%) contrast(88%);
-          filter: invert(58%) sepia(11%) saturate(2051%) hue-rotate(356deg) brightness(96%) contrast(88%);
 }
 
 .product-data {
   width: 100%;
   padding: 0px 0px 40px 0px;
+  overflow: hidden;
+}
+
+.product-data .nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-bottom: 0px !important;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  border: 0px !important;
+}
+
+.product-data .nav::-webkit-scrollbar-thumb, .product-data .nav::-webkit-scrollbar-track, .product-data .nav::-webkit-scrollbar {
+  width: 0px !important;
+  background: transparent !important;
+}
+
+.product-data .nav .nav-item {
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+}
+
+.product-data .nav .nav-item .nav-link {
+  width: 130px;
+  height: 47px;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+
+.product-data .nav .nav-item .nav-link.blue-bk {
+  background-color: #008BD2;
+}
+
+.product-data .nav .nav-item .nav-link.purble-bk {
+  background-color: #7C0E6F;
+}
+
+.product-data .nav .nav-item .nav-link.gray-bk {
+  background-color: #757474;
+}
+
+.product-data .nav .nav-item .nav-link.semi-gray-bk {
+  background-color: #959594;
+}
+
+.product-data .nav .nav-item .nav-link.yellow-bk {
+  background-color: #F09B0C;
+}
+
+.product-data .nav .nav-item .nav-link.green-bk {
+  background-color: #469248;
+}
+
+.product-data .tab-content {
+  width: 100%;
+}
+
+.product-data .tab-content .tab-pane {
+  width: 100%;
+}
+
+.open-menu {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999 !important;
+  background-color: #008BD2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.open-menu .contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.open-menu .contain img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+
+.open-menu .contain span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.open-menu .btn-link {
+  width: 50px;
+  height: 50px;
+  background-color: #469248;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.copyrights {
+  width: 100%;
+  padding: 20px 0px;
+  border-top: 1px solid #808080;
+}
+
+.copyrights .content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.copyrights .content p {
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+.copyrights .content a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.copyrights .content a p {
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+
+.copyrights .content a img {
+  width: 100px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .product-box {
@@ -1581,8 +1782,8 @@ header .share-data .data li a span {
 }
 
 .product-box img.location {
-  -webkit-filter: invert(58%) sepia(11%) saturate(2051%) hue-rotate(356deg) brightness(96%) contrast(88%);
-          filter: invert(58%) sepia(11%) saturate(2051%) hue-rotate(356deg) brightness(96%) contrast(88%);
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .product-box h3 {
@@ -1631,7 +1832,7 @@ header .share-data .data li a span {
   width: 50px;
   height: 60px;
   background-color: #fff;
-  border: 1px solid #BC8B46;
+  border: 1px solid #008BD2;
   border-radius: 6px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1664,7 +1865,7 @@ header .share-data .data li a span {
 }
 
 .product-box .button-contain a span.blue {
-  color: #BC8B46;
+  color: #008BD2;
 }
 
 .product-box .button-contain a span.price {
@@ -1673,7 +1874,7 @@ header .share-data .data li a span {
 }
 
 .product-box .button-contain a:hover {
-  background-color: #BC8B46;
+  background-color: #008BD2;
 }
 
 .product-box .button-contain a:hover span {
@@ -1686,7 +1887,7 @@ header .share-data .data li a span {
 }
 
 .product-box:hover h3 {
-  color: #BC8B46;
+  color: #008BD2;
 }
 
 .contact {
@@ -1725,7 +1926,7 @@ header .share-data .data li a span {
 .contact .socail-meida li a {
   width: 50px;
   height: 50px;
-  background-color: #BC8B46;
+  background-color: #008BD2;
   border-radius: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1768,7 +1969,7 @@ header .share-data .data li a span {
 }
 
 .modal-content .content h1 {
-  color: #BC8B46;
+  color: #008BD2;
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -1817,7 +2018,7 @@ header .share-data .data li a span {
   width: 50px;
   height: 60px;
   background-color: #fff;
-  border: 1px solid #BC8B46;
+  border: 1px solid #008BD2;
   border-radius: 6px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1850,7 +2051,7 @@ header .share-data .data li a span {
 }
 
 .modal-content .content .button-contain a span.blue {
-  color: #BC8B46;
+  color: #008BD2;
 }
 
 .modal-content .content .button-contain a span.price {
@@ -1859,7 +2060,7 @@ header .share-data .data li a span {
 }
 
 .modal-content .content .button-contain a:hover {
-  background-color: #BC8B46;
+  background-color: #008BD2;
 }
 
 .modal-content .content .button-contain a:hover span {
@@ -1889,6 +2090,30 @@ header .share-data .data li a span {
   margin: 0px !important;
 }
 
+.modal-content .content .form-contain .form-group .number {
+  width: 50px;
+  height: 50px;
+  background-color: #008BD2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+}
+
 .modal-content .content .form-contain .form-group img {
   width: 24px;
   height: 24px;
@@ -1903,7 +2128,7 @@ header .share-data .data li a span {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  border: 1px solid rgba(188, 139, 70, 0.2);
+  border: 1px solid rgba(0, 139, 210, 0.2);
   border-radius: 10px;
   -webkit-padding-start: 45px;
           padding-inline-start: 45px;
@@ -1937,7 +2162,7 @@ header .share-data .data li a span {
 }
 
 .modal-content .content .form-contain .form-group .form-control:focus, .modal-content .content .form-contain .form-group .form-control:hover {
-  border-color: #BC8B46;
+  border-color: #008BD2;
 }
 
 .modal-content .custom-btn {
@@ -1959,7 +2184,7 @@ header .share-data .data li a span {
   -webkit-margin-end: 10px;
           margin-inline-end: 10px;
   outline: none;
-  border: 1px solid #BC8B46;
+  border: 1px solid #008BD2;
 }
 
 .modal-content .custom-btn:last-child {
@@ -1968,7 +2193,7 @@ header .share-data .data li a span {
 }
 
 .modal-content .custom-btn.primary {
-  background-color: #BC8B46;
+  background-color: #008BD2;
 }
 
 .modal-content .custom-btn.primary i, .modal-content .custom-btn.primary span {
@@ -1980,7 +2205,7 @@ header .share-data .data li a span {
 }
 
 .modal-content .custom-btn.primary:hover span, .modal-content .custom-btn.primary:hover i {
-  color: #BC8B46;
+  color: #008BD2;
 }
 
 .modal-content .custom-btn.secondary {
@@ -1988,11 +2213,11 @@ header .share-data .data li a span {
 }
 
 .modal-content .custom-btn.secondary i, .modal-content .custom-btn.secondary span {
-  color: #BC8B46;
+  color: #008BD2;
 }
 
 .modal-content .custom-btn.secondary:hover {
-  background-color: #BC8B46;
+  background-color: #008BD2;
 }
 
 .modal-content .custom-btn.secondary:hover i, .modal-content .custom-btn.secondary:hover span {
@@ -2048,6 +2273,15 @@ header .share-data .data li a span {
   }
   .product-box .button-contain a span {
     font-size: 11px !important;
+  }
+  .copyrights .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

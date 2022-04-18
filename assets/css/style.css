@@ -1739,6 +1739,10 @@ header .share-data .data li a span {
           margin-inline-end: 10px;
 }
 
+.copyrights .content a span {
+  color: #008BD2;
+}
+
 .copyrights .content a img {
   width: 100px;
   height: 40px;

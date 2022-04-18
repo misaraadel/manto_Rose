@@ -1,0 +1,47 @@
+@media (max-width: 999px) {
+  header {
+    padding: 100px 0px 50px !important;
+    .share-data {
+      h1 {
+        font-size: 15px;
+        margin-inline-end: 10px;
+      }
+
+      .data li {
+        margin-inline-end: 8px !important;
+      }
+    }
+    
+    .prodcutDetailsSwiper .swiper-slide {
+      height: 260px !important;
+    }
+
+    .prodcutDetailsThumbsSlider .swiper-slide {
+      height: 90px !important;
+    }
+  }
+
+  .product-box {
+    img {
+      height: 80px;
+
+      &.location {
+        width: 50px !important;
+        height: 50px !important;
+      }
+    }
+
+    .button-contain {
+      justify-content: center !important;
+
+      a {
+        width: 66px !important;
+        margin-inline-end: 5px !important;
+    
+        span {
+          font-size: 11px !important;
+        }
+      }
+    }
+  }
+}
